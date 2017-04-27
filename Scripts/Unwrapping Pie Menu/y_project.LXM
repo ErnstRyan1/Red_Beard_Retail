@@ -1,0 +1,12 @@
+#LXMacro#
+tool.set uv.viewProj on
+tool.set uv.create on
+tool.attr uv.create proj planar
+tool.noChange
+tool.doApply
+select.nextMode
+tool.set uv.relax on
+tool.noChange
+tool.setAttr uv.relax iter 477
+tool.doApply
+select.nextMode

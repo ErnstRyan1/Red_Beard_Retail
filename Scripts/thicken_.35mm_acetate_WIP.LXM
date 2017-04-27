@@ -1,0 +1,93 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+select.typeFrom typelist:"polygon;edge;vertex;item;pivot;center;ptag" enable:true
+# replay name:"Selection All"
+select.all
+# replay name:"weight_100.LXM"
+script.implicit name:"weight_100.LXM"
+tool.set preset:"*.bevel" mode:on
+# Command Block Begin: 
+    tool.setAttr tool:"poly.bevel" attr:inset value:"0.0"
+    tool.setAttr tool:"poly.bevel" attr:shift value:"0.0"
+    tool.doApply
+# Command Block End: 
+# Command Block Begin: 
+    tool.setAttr tool:"poly.bevel" attr:inset value:"0.001"
+    tool.setAttr tool:"poly.bevel" attr:shift value:"0.0"
+    tool.doApply
+# Command Block End: 
+# replay name:"Select Next Mode"
+select.nextMode
+# replay name:"unwrap_relax.LXM"
+script.implicit name:"unwrap_relax.LXM"
+tool.set preset:Thicken mode:on
+# Command Block Begin: 
+    tool.setAttr tool:"poly.smshift" attr:shift value:"0.0"
+    tool.setAttr tool:"poly.smshift" attr:scale value:"1.0"
+    tool.doApply
+# Command Block End: 
+tool.setAttr tool:"poly.smshift" attr:shift value:"0.00035000000000000005"
+tool.doApply
+# replay name:"Select Next Mode"
+select.nextMode
+# replay name:"Hide Selected"
+hide.sel
+# replay name:"Selection All"
+select.all
+# replay name:"Contract Selection"
+select.contract
+# replay name:"Move"
+tool.set preset:TransformMove mode:on
+tool.doApply
+tool.xfrmDisco enable:true
+tool.doApply
+tool.setAttr tool:"xfrm.transform" attr:U value:"1.0"
+tool.doApply
+# replay name:"Select Next Mode"
+select.nextMode
+# replay name:"Hide Selected"
+hide.sel
+select.typeFrom typelist:"edge;vertex;polygon;item;pivot;center;ptag" enable:true
+# replay name:"Use Selection Set"
+select.useSet name:_rb_bottom_edge mode:select
+# replay name:"Expand Selection"
+select.expand
+select.convert type:polygon
+# replay name:"unwrap_relax.LXM"
+script.implicit name:"unwrap_relax.LXM"
+# replay name:"UV Rectangle"
+uv.rectangle pack:false gaps:"0.2" uniformX:false uniformY:false
+# replay name:"Pack UVs"
+uv.pack pack:true direction:horizontal gaps:"0.2" region:normalized udim:1001 regionX:"0.0" regionY:"0.0" regionW:"2.0" regionH:"2.0"
+# replay name:"Fit UVs"
+uv.fit sepa:entire keep:false
+# replay name:"Move"
+tool.set preset:TransformMove mode:on
+tool.doApply
+tool.setAttr tool:"xfrm.transform" attr:V value:"1.0"
+tool.doApply
+# replay name:"Select Next Mode"
+select.nextMode
+# replay name:"Hide Selected"
+hide.sel
+# replay name:"Selection All"
+select.all
+# replay name:"unwrap_relax.LXM"
+script.implicit name:"unwrap_relax.LXM"
+# replay name:"UV Rectangle"
+uv.rectangle pack:false gaps:"0.2" uniformX:false uniformY:false
+# replay name:"Fit UVs"
+uv.fit sepa:entire keep:false
+# replay name:"Move"
+tool.set preset:TransformMove mode:on
+tool.doApply
+tool.setAttr tool:"xfrm.transform" attr:V value:"1.0"
+tool.doApply
+# replay name:"Select Next Mode"
+select.nextMode
+# replay name:"Unhide"
+unhide
+# replay name:"Item"
+select.typeFrom typelist:"item;pivot;center;edge;polygon;vertex;ptag" enable:true

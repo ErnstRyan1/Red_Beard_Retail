@@ -1,0 +1,24 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+select.typeFrom typelist:"polygon;edge;vertex;item;pivot;center;ptag" enable:true
+# replay name:"Hide Unselected"
+hide.unsel
+tool.set preset:"uv.unwrap" mode:on
+# replay name:"Selection All"
+select.all
+# replay name:"UV Rectangle"
+uv.rectangle pack:true gaps:"0.2" uniformX:false uniformY:false
+# replay name:"Pack UVs"
+uv.pack pack:true direction:horizontal gaps:"0.2" region:normalized udim:1001 regionX:"0.0" regionY:"-1.0" regionW:"2.0" regionH:"2.0"
+# replay name:"Fit UVs"
+uv.fit sepa:entire keep:false
+# replay name:"Set Part..."
+poly.setPart name:Edge
+# replay name:"weight_100.LXM"
+script.implicit name:"weight_100.LXM"
+# replay name:"Unhide"
+unhide
+# replay name:"Select Next Mode"
+select.nextMode

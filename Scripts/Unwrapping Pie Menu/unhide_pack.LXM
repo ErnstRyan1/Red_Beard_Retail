@@ -1,0 +1,3 @@
+#LXMacro#
+@unhide_ALL.LXM
+uv.pack true direction:horizontal gaps:0.2 region:normalized udim:1001 regionX:0.0 regionY:-1.0 regionW:1.0 regionH:1.0

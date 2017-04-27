@@ -1,0 +1,32 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+tool.set preset:"uv.unwrap" mode:on
+tool.doApply
+# Command Block Begin: 
+    tool.setAttr tool:"uv.unwrap" attr:iter value:2207
+    tool.doApply
+# Command Block End: 
+tool.setAttr tool:"uv.unwrap" attr:mode value:abf
+tool.doApply
+# Command Block Begin: 
+    tool.setAttr tool:"uv.unwrap" attr:iter value:2241
+    tool.doApply
+# Command Block End: 
+tool.set preset:"uv.relax" mode:on
+# Command Block Begin: 
+    tool.setAttr tool:"uv.relax" attr:iter value:3206
+    tool.doApply
+# Command Block End: 
+# replay name:"Select Next Mode"
+select.nextMode
+select.typeFrom typelist:"polygon;edge;vertex;item;pivot;center;ptag" enable:true
+tool.set preset:"uv.peeler" mode:on
+tool.set preset:"uv.relax" mode:on
+# Command Block Begin: 
+    tool.setAttr tool:"uv.relax" attr:iter value:3225
+    tool.doApply
+# Command Block End: 
+# replay name:"Pack UVs"
+uv.pack pack:true stretch:true orient:true direction:horizontal gaps:"0.2" bbox:false stack:false region:normalized udim:1001 regionX:"0.0" regionY:"-1.0" regionW:"1.0" regionH:"1.0" tileU:1 tileV:1

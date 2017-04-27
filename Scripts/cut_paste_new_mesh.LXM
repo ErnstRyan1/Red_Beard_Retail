@@ -1,0 +1,8 @@
+#LXMacro#
+cut
+#Command Block Begin:  Add Item
+   item.create mesh
+   layer.move 11 4 0
+#Command Block End:  Add Item
+@pasteandselect.pl
+item.name "Mesh (3)" xfrmcore
