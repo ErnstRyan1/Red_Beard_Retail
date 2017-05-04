@@ -2,23 +2,15 @@
 # Made with Replay
 # mechanicalcolor.com
 
+# replay name:"Selection All"
+select.all
+# replay name:"Set Part..."
+poly.setPart name:"Inner Print"
+# replay name:"weight_100.LXM"
+script.implicit name:"weight_100.LXM"
 tool.set preset:Thicken mode:on
-# Command Block Begin: 
-    tool.setAttr tool:"poly.smshift" attr:shift value:"0.0"
-    tool.setAttr tool:"poly.smshift" attr:scale value:"1.0"
-    tool.doApply
-# Command Block End: 
-# Command Block Begin: 
-    tool.setAttr tool:"poly.smshift" attr:shift value:"0.001"
-    tool.setAttr tool:"poly.smshift" attr:scale value:"1.0"
-    tool.doApply
-# Command Block End: 
 tool.setAttr tool:"poly.smshift" attr:shift value:"0.0015"
-tool.doApply
-tool.setAttr tool:"poly.smshift" attr:maxAngle value:"2.356194490192345"
-tool.doApply
-# replay name:"Select Next Mode"
-select.nextMode
+tool.apply
 # replay name:"Set Part..."
 poly.setPart name:"Outter Print"
 # replay name:"Hide Selected"
@@ -35,3 +27,8 @@ select.all
 poly.setPart name:Edge
 # replay name:"Unhide"
 unhide
+tool.doApply
+# replay name:"Item"
+select.typeFrom typelist:"item;pivot;center;edge;polygon;vertex;ptag" enable:true
+# replay name:"Reset Work Plane"
+workPlane.reset

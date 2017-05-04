@@ -1,67 +1,34 @@
 #LXMacro#
-#set mode to polygon and select all polys in mesh#
-select.type polygon
+# Made with Replay
+# mechanicalcolor.com
+
+# replay name:"Selection All"
 select.all
-vertMap.list txuv Texture
-
-#Make a mesh part and name it Outter Print#
-poly.setPart "Outter Print"
-
-#Thicken to 1.5mm, thats the average thickeness of packaging coragate#
-tool.set Thicken on
-#Command Block Begin:  ToolAdjustment
-   tool.setAttr poly.smshift shift 0.0
-   tool.setAttr poly.smshift scale 1.0
-#Command Block End:  ToolAdjustment
-tool.attr poly.smshift shift 0.00035
-tool.doApply
-
-#Hide the selected polys so we can set parts and weight edges for whats left#
+# replay name:"Set Part..."
+poly.setPart name:"Inner Print"
+# replay name:"weight_100.LXM"
+script.implicit name:"weight_100.LXM"
+tool.set preset:Thicken mode:on
+tool.setAttr tool:"poly.smshift" attr:shift value:"0.00035"
+tool.apply
+# replay name:"Set Part..."
+poly.setPart name:"Outter Print"
+# replay name:"Hide Selected"
 hide.sel
+# replay name:"Selection All"
 select.all
-select.polygon add 0 face
+# replay name:"Contract Selection"
 select.contract
-
-#Move UVS for inner print down 1 UDIM#
-tool.set TransformMove on
-tool.attr xfrm.transform U 1.0
-tool.setAttr xfrm.transform U 1.0
-poly.setPart "Inner Print"
-
-#select edge geo#
-vertMap.list txuv Texture
-select.invert
-poly.setPart "Edge"
-hide.unsel
-select.typeFrom edge;vertex;polygon;item;pivot;center;ptag true
-select.useSet _rb_bottom_edge select
-select.expand
-select.convert polygon
-
-#Move UVS for inner print down 1 UDIM#
-tool.viewType uv
-tool.set uv.unwrap on
-tool.noChange
-tool.doApply
-uv.rectangle true 0.2 false false
-uv.pack true true true horizontal 0.2 false false normalized 1001 0.0 0.0 1.0 1.0 1 1
-uv.fit entire false
-tool.set TransformMove on
-tool.attr xfrm.transform V 1.0
-tool.setAttr xfrm.transform V 1.0
-tool.doApply
-select.nextMode
+# replay name:"Hide Selected"
 hide.sel
-tool.set uv.unwrap on
-tool.noChange
-tool.doApply
-select.nextMode
-uv.rectangle true 0.2 false false
-uv.pack true true true horizontal 0.2 false false normalized 1001 0.0 0.0 1.0 1.0 1 1
-uv.fit entire false
-tool.set TransformMove on
-tool.noChange
-tool.attr xfrm.transform V 1.0
-tool.doApply
-select.nextMode
+# replay name:"Selection All"
+select.all
+# replay name:"Set Part..."
+poly.setPart name:Edge
+# replay name:"Unhide"
 unhide
+tool.doApply
+# replay name:"Item"
+select.typeFrom typelist:"item;pivot;center;edge;polygon;vertex;ptag" enable:true
+# replay name:"Reset Work Plane"
+workPlane.reset

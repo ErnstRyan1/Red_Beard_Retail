@@ -10,12 +10,16 @@ tool.set preset:"uv.unwrap" mode:on
 tool.set preset:"uv.relax" mode:on
 tool.doApply
 # Command Block Begin: 
-    tool.setAttr tool:"uv.relax" attr:iter value:32
+    tool.setAttr tool:"uv.relax" attr:iter value:512
     tool.doApply
 # Command Block End: 
 select.typeFrom typelist:"polygon;edge;vertex;item;pivot;center;ptag" enable:true
 tool.set preset:"uv.relax" mode:on
 tool.doApply
+# Command Block Begin: 
+    tool.setAttr tool:"uv.relax" attr:iter value:458
+    tool.doApply
+# Command Block End: 
 # Command Block Begin: 
     tool.setAttr tool:"uv.relax" attr:iter value:46
     tool.doApply
