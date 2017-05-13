@@ -16,41 +16,52 @@
           <h2>Contents</h2>
           <ul>
             <li><a href="#About">About Red Beard Retail<br /></a></li>
-            <li><a href="#PieMenus">Pie Menu Keybindings<br /></a></li>
+			<li><a href="#AboutDisplays">About Display Presets<br /></a></li>
+			<li><a href="#AboutMaterials">About Material Presets<br /></a></li>
+
+			
+            <li><a href="#AboutPieMenus">About Pie Menus<br /></a></li>
           </ul>
         </div>
 
         <h2 id="About">About Red Beard Retail</h2>
-        <p>red_beard_retail is good kit.</p>
+        <p>Red Beard Retail is a collection of scripts and presets that make it easy to visualize products in a retail space.  The presets are the largest part of this kit and include mostly packaging and displays.  Most presets have .PSDs included with the default UVs embedded.  I've also added an "Open with Default App" command to the right click menu, in the shader tree to make these easier to access.
+		</p>
+		
+		<h2 id="AboutDisplays">About Display Presets</h2>
+		<p>To quickly build out an endcap display, double click on the elements you want, they will pop into place cohesivily.  For example, you may want a blank endcap with just one shelf, a PDQ tray with an info box, and a curved poster.  Navigate to the displays preset folder and double click on each element, those elements will come in already in place on the endcap.
+		</p>
+		
+		<h2 id="AboutMaterials">About Material Presets</h2>
+		 <p>Most of these presets utilize a part based shader workflow.  This means 1 material folder may hold multiple sub folders all masked by part names.  A good example of this is the cardboard material preset, which has an "Edge" part creating the cardboard zig-zag edging. In order to properly utilize this edge material, your edge needs to be all quads, and unwrapped as a rectangle, then use the fill command UNPROPORTIONALLY on those UVs to fit them into the full UV space as a sqaure.  The texture repeats horizontally and can be adjusted in the shader tree.
+		</p>
 
         <hr />
 
-        <h2>Pie Menu Keybindings</h2>
+        <h2>About Pie Menus</h2>
 
-        <ul id="PieMenus">
+        <ul id="AboutPieMenus">
           <li>
             <h3 id="unitswitcher">Unit Switcher</h3>
-            <div class="definition">
-              <code>attr.formPopover {rb_unit_switcher:sheet}</code>
-			  <li>hit <span class="keystroke">Alt-7</span></li>
-              <p class="tooltip">Switch your units for the scene.</p>
-            </div>
-            <h4>Typical Usecase</h4>
-            <p>This pie menu will switch your units, and you can activate the dimenisions tool.</p>
+				<div class="definition">
+				  <code>attr.formPopover {rb_unit_switcher:sheet}</code>
+				  <li>hit <span class="keystroke">Alt-7</span></li>
+				  <p class="tooltip">Switch your units for the scene.</p>
+				</div>
+				<h4>Typical Usecase</h4>
+				<p>This pie menu will switch your units, and you can activate the dimenisions tool.</p>
+				</li>
 			
-			
-			
+		<li>
 			<h3 id="unwrapingpie">UV Unwrapping Pie Menu</h3>
-            <div class="definition">
-              <code>attr.formPopover {rb_uv_unwrapping:sheet}</code>
-			  <li>hit <span class="keystroke">Shift-0</span></li>
-              <p class="tooltip">This menu will let you quickly preform common unwrapping tasks even when you don't have an UV window open.</p>
-            </div>
-            <h4>Typical Usecase</h4>
-            <p>While your building your packaging you can use the Unwrap and Relex command on any polygons or line segements you have selected to quickly build your UV unwraps.  You can use the rectangle, fit, and align tools to clean up your unwrap.  You can also export your UVs directly from this piemenu.</p>
-
-           
-          </li>
+				<div class="definition">
+				  <code>attr.formPopover {rb_uv_unwrapping:sheet}</code>
+				  <li>hit <span class="keystroke">Shift-0</span></li>
+				  <p class="tooltip">This menu will let you quickly preform common unwrapping tasks even when you don't have an UV window open.</p>
+				</div>
+				<h4>Typical Usecase</h4>
+				<p>While your building your packaging you can use the Unwrap and Relex command on any polygons or line segements you have selected to quickly build your UV unwraps.  You can use the rectangle, fit, and align tools to clean up your unwrap.  You can also export your UVs directly from this piemenu.</p>
+			  </li>
         </ul>
     </body>
 </html>
