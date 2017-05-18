@@ -5,16 +5,16 @@ import lx, lxifc, lxu.command
 FORMS = [
     {
         "label":"Unit Switcher Pie Menu",
-        "hash":"00235486657:sheet"
+        "hash":"rb_unit_switcher:sheet"
     }, {
         "label":"Seletion Sets Pie Menu",
-        "hash":"01541977054:sheet"
+        "hash":"rb_select_set:sheet"
     }, {
         "label":"Packaging Thicken Pie Menu",
-        "hash":"68480631126:sheet"
+        "hash":"rb_packaging_thicken:sheet"
     }, {
         "label":"UV Unwrapping Pie Menu",
-        "hash":"64629568081:sheet"
+        "hash":"rb_uv_unwrapping:sheet"
     }
 ]
 
