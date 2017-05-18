@@ -5,6 +5,7 @@ import lx, lxifc, lxu.command
 FORMS = [
     {
         "label":"Unit Switcher Pie Menu",
+		"recommended": "Alt+7",
         "hash":"rb_unit_switcher:sheet"
     }, {
         "label":"Seletion Sets Pie Menu",
