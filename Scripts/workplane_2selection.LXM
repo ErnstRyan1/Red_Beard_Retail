@@ -1,0 +1,6 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+# replay name:"Align Work Plane to Selected"
+workPlane.fitSelect
