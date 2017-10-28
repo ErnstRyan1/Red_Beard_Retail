@@ -1,0 +1,10 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+layout.window hash:ItemListAddPBViewPopover
+# Command Block Begin: 
+    select.preset path:"[itemtypes]:locator/mesh.itemtype" mode:set
+    select.filepath path:"[itemtypes]:locator/mesh.itemtype" mode:set
+# Command Block End: 
+preset.do
