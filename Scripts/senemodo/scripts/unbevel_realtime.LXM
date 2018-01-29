@@ -1,0 +1,6 @@
+#LXMacro#
+vertMap.deleteByName type:morf name:seneMorph
+vertMap.new seneMorph morf true {0.78 0.78 0.78} 1.0
+@unbevel.pl noVertMerge
+select.vertexMap seneMorph morf 3
+tool.set vertMap.applyMorph on

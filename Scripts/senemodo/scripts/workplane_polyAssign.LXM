@@ -1,0 +1,4 @@
+#LXMacro#
+workPlane.fitSelect
+@workplane_reset_restore.pl
+@workplane_reset_restore.pl restore

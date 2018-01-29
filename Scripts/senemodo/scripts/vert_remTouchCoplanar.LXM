@@ -1,0 +1,5 @@
+#LXMacro#
+@select_edgeToPolys.pl selectAll
+@selectionTools.pl deselDiscoUVEdges
+@superRemove.pl
+select.type vertex

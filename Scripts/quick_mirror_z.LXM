@@ -1,0 +1,24 @@
+#LXMacro#
+# Made with Replay
+# mechanicalcolor.com
+
+tool.set preset:"*.mirror" mode:on
+# Command Block Begin: ToolAdjustment
+    tool.setAttr tool:"gen.mirror" attr:axis value:2
+    tool.setAttr tool:"gen.mirror" attr:cenX value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:cenY value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:cenZ value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:leftX value:"0.0042"
+    tool.setAttr tool:"gen.mirror" attr:leftY value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:leftZ value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:upX value:"0.0"
+    tool.setAttr tool:"gen.mirror" attr:upY value:"0.0042"
+    tool.setAttr tool:"gen.mirror" attr:upZ value:"0.0"
+# Command Block End: ToolAdjustment
+tool.attr tool:"effector.clone" attr:merge value:true
+tool.attr tool:"effector.clone" attr:dist value:"0.0002"
+tool.attr tool:"effector.clone" attr:dist value:"0.0003"
+tool.attr tool:"effector.clone" attr:dist value:"0.0004"
+tool.doApply
+select.nextMode
+select.drop type:polygon

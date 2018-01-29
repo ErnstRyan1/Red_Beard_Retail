@@ -1,0 +1,4 @@
+#LXMacro#
+tool.set actr.auto on 0
+tool.set snap.grid on
+tool.set xfrm.move on

@@ -1,0 +1,3 @@
+#LXMacro#
+@viewport_displayToggles.pl forceOff toggleBGItemHide
+hide.unsel

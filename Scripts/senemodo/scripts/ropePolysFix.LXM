@@ -1,0 +1,51 @@
+#LXMacro#
+
+hide.unsel
+select.convert edge
+@makePolygon.pl
+
+select.drop polygon
+select.polygon add type curve 3
+delete
+
+select.all
+
+@tripleorspin.pl
+
+@turnon.pl *.bevel
+#Command Block Begin:  ToolAdjustment
+   tool.setAttr poly.bevel inset 0.0
+   tool.setAttr poly.bevel shift 0.125
+#Command Block End:  ToolAdjustment
+tool.doApply
+@turnon.pl selectNext
+
+select.drop edge
+@selectionTools.pl concave selConcaveConvexEdges
+@selectionTools.pl concave selConcaveConvexEdges
+
+select.convert vertex
+select.typeFrom polygon;edge;vertex;item;pivot;center;ptag true
+@select_invertOnMesh.pl
+
+@turnon.pl xfrm.push
+tool.setAttr xfrm.push dist 0.051484
+tool.doApply
+tool.set xfrm.push off
+
+select.connect
+poly.merge
+select.typeFrom vertex;edge;polygon;item;pivot;center;ptag true
+
+@turnon.pl xfrm.smooth
+tool.setAttr xfrm.smooth iter 200
+tool.doApply
+tool.set xfrm.smooth off
+
+select.typeFrom polygon;edge;vertex;item;pivot;center;ptag true
+@select_boundaryEdges.pl
+
+@quickPipe.pl
+
+delete
+unhide

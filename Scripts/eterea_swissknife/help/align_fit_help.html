@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><b>This is the info that author of this (GREAT) script, Seneca Menard, shared on the header of code</b></p>
+<p class="p2"><br></p>
+<p class="p1"># SCRIPT NAME: align_fit.pl</p>
+<p class="p1"># AUTHOR: Seneca Menard</p>
+<p class="p1"># VERSION: 3.06</p>
+<p class="p2"><br></p>
+<p class="p1"><b>This script is for ALIGNING and/or STRETCHING whatever's currently selected to whatever OTHER elements are also selected.</b></p>
+<p class="p2"><br></p>
+<p class="p1">The way it figures out what you want to align TO is by checking what SELECTION MODE you're currently in. So if you're in VERT mode, but also have some POLYGONS selected, it'll align your VERTS to your POLYGONS.</p>
+<p class="p2"><br></p>
+<p class="p1">I just added in a new feature, so that if you've only got one set of elements selected and it won't align to any other geometry because nothing else is selected, it will align itself to the world ORIGIN in that case.</p>
+<p class="p2"><br></p>
+<p class="p1"><b>There's ALIGNING (OVER/CENTER/UNDER) and SCALING/STRETCHING.</b></p>
+<p class="p2"><br></p>
+<p class="p1"><b>There's also POINT TO POINT ALIGNING, which is a different system:</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1">The way that system works is that it ALIGNS one point to another, so if you want the very TOP of a sphere to be aligned with the very TOP of a cube in the Yaxis, all you would have to do is select the edges or polygons of the sphere and two verts. The two verts would be a vert on top of the sphere and then a vert on top of the cube. Then you would press the (p2p align Y) button.</p>
+<p class="p2"><br></p>
+<p class="p1">Another thing to mention is that it has a safety check on what verts are selected so if you accidentally selected more than 2 verts, when you were only supposed to select 2 verts, it'll only pay attention to whatever other vert is the farthest away from the first vert in whatever axes it's supposed to pay attention to.</p>
+<p class="p2"><br></p>
+<p class="p1"><b>Then there's POINT TO POINT SCALING,</b> which is also a little different, in that it requires 4 points to be selected, and will measure the distance between the first 2 points and compare it to the distance of the second 2 points and will then scale the selected edges or polygons by exactly the amount it takes to get those first two points to be the exact same length as the second two points.</p>
+<p class="p2"><br></p>
+<p class="p1">For example, say you have two cubes in your scene and one's smaller than the other...<span class="Apple-converted-space">  </span>All you have to do is select two points on the first cube and then basically the same 2 points on the second cube, hit the (Point to Point Scale) button and now the first cube will be exactly the same size as the second cube. Another thing to mention is that I put in a safety check for determining what verts are selected.</p>
+<p class="p2"><br></p>
+<p class="p1">I'm only trying to pay attention to 4 verts, but sometimes it's hard to select only 4 verts. For example, if you're in the TOP DOWN 2D VIEW and you have two cubes in the scene and only mean to select 2 verts on each cube, you'll actually select 4 verts on each cube because the cubes are 3d and their bottom verts were right under the top verts as you know… So I put in an option into the GUI that lets you tell me what window you were selecting those verts from so I can know which selected verts to ignore.<span class="Apple-converted-space">  </span>The "ANY WINDOW" button is just there to ignore all of my safety checks, so if you know you only selected 4 verts (which is what happens 99% of the time), you don't have to pay attention to what window button to press.</p>
+<p class="p2"><br></p>
+<p class="p1"><b>There's also POINT TO POINT STRETCHING,</b> which is similar to POINT TO POINT SCALE, only it allows you to do non-proportional scale.</p>
+<p class="p2"><br></p>
+<p class="p1"><b>Then there's PIVOT ALIGNMENT, which has FOUR parts to it:</b></p>
+<p class="p2"><br></p>
+<p class="p1">1) ALIGN TO PIVOT: Which aligns the selected ELEMENT to WHERE the pivot point is in the current layer</p>
+<p class="p2"><br></p>
+<p class="p1">2) ALIGN FROM PIVOT: Which aligns the selected elements FROM the pivot point to whatever other elements that are selected in the scene. (so selecting a POLYGON CUBE and then selecting POINTS and running the script will ALIGN THE SELECTED POINTS AND THE PIVOT POINT to the POLYGONS.</p>
+<p class="p2"><br></p>
+<p class="p1">3) SET PIVOT HERE: Which will align the pivot point to the selected elements.<span class="Apple-converted-space">  </span>There's also a reset pivot point button in there to easily set the pivot back to 0,0,0.</p>
+<p class="p2"><br></p>
+<p class="p1">4) ANCHOR TO PIVOT: This is so if you align an object TO the pivot point, but dont' want it to align from the center of the object.<span class="Apple-converted-space">  </span>What you do is select some VERTS or EDGES that you want to be centered on the pivot, and then selected the POLYGONS that you actually want moved.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><b>A couple of videos</b> (created and shared by Seneca on his site):</p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><a href="http://www.indigosm.com/modo/alignFit_new.mov">TUTORIAL VIDEO</a></p>
+<p class="p2"><br></p>
+<p class="p1"><a href="http://www.indigosm.com/modo/alignFit_anchorToPivot.mov">ANCHOR TO PIVOT VIDEO</a></p>
+</body>
+</html>

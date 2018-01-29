@@ -1,0 +1,15 @@
+#LXMacro#
+tool.snapType component grid false
+tool.snapType component vertex false
+tool.snapType component edge false
+tool.snapType component edgeCenter false
+tool.snapType component polygon false
+tool.snapType component polygonCenter false
+tool.snapType component intersection false
+tool.snapType component box false
+tool.snapType component pivot false
+tool.snapType component worldAxis false
+tool.snapType component straightLine false
+tool.snapType component rightAngle false
+tool.snapMode global
+tool.snapMode component

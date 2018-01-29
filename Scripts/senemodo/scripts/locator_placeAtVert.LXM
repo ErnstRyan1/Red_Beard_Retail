@@ -1,0 +1,10 @@
+#LXMacro#
+select.typeFrom item;pivot;center;edge;polygon;vertex;ptag true
+item.create locator mask:locator
+@itemTools.pl setItemPosToVert
+@itemTools.pl locator set selectNewest
+item.help add label
+#item.channel locator$ihLabel.Y 5
+#item.channel locator$ihLabel.X 5
+item.channel locator$size 0.001
+select.type vertex

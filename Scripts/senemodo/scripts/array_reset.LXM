@@ -1,0 +1,4 @@
+#LXMacro#
+tool.attr gen.array offX 0.0
+tool.attr gen.array offY 0.0
+tool.attr gen.array offZ 0.0

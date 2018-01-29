@@ -1,0 +1,5 @@
+#LXMacro#
+tool.attr xfrm.bend spineX 0.0
+tool.attr xfrm.bend spineY 0.0
+tool.attr xfrm.bend spineZ 0.0
+tool.doApply

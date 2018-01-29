@@ -1,0 +1,6 @@
+#LXMacro#
+select.expand
+@edgeSelectByNormal.pl angleDlg greater deselect
+@selectionTools.pl deselDiscoUVEdges
+@selectionTools.pl deselEdgesWithTwoMatrls
+@superRemove.pl

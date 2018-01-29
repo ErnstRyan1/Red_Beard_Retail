@@ -1,0 +1,4 @@
+#LXMacro#
+workplane.reset
+select.symmetryState none
+@turnon.pl custom sen_meshPaint

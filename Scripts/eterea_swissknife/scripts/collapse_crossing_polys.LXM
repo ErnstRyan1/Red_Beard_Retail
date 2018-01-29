@@ -1,0 +1,12 @@
+#LXMacro#
+# Created and shared by Ylaz, here:
+# http://community.thefoundry.co.uk/discussion/topic.aspx?f=119&t=81665
+
+script.run "macro.scriptservice:92663570022:macro"
+select.typeFrom polygon
+tool.set poly.spikey on
+tool.setAttr poly.spikey factor 0.0
+tool.doApply
+tool.set poly.spikey off
+select.typeFrom edge
+remove

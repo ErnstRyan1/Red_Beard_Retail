@@ -1,0 +1,16 @@
+#LXMacro#
+@selectionTools.pl cutCubePipeIntoSides
+select.useSet senetempBeam select
+@cutPastePolysSelEdgeRow.pl
+
+@super_uvTools.pl peeler
+select.drop edge
+@super_UVTools.pl selUnHorizontalUVEdges
+@moveToFurthest.pl forceUV right horizontal eachGroup
+select.type polygon
+
+@super_UVTools.pl U scaleToPixelSize
+@super_UVTools.pl Y uvHotSpotTool
+vert.merge auto
+select.useSet senetempBeam select
+select.editSet senetempBeam remove

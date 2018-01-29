@@ -1,0 +1,26 @@
+#LXMacro#
+select.editSet senetempBarycentric add
+select.connect
+select.editSet senetempBarycentricTemp add
+
+select.drop polygon
+select.useSet senetempBarycentric select
+
+@cutPastePolysSelEdgeRow.pl
+
+@super_uvTools.pl peeler
+select.drop edge
+@super_UVTools.pl selUnHorizontalUVEdges
+@moveToFurthest.pl forceUV right horizontal eachGroup
+select.type polygon
+
+@super_UVTools.pl U scaleToPixelSize
+@super_UVTools.pl Y uvHotSpotTool
+
+select.useSet senetempBarycentricTemp select
+select.editSet senetempBarycentricTemp remove
+vert.merge auto
+
+select.drop polygon
+select.useSet senetempBarycentric select
+select.editSet senetempBarycentric remove

@@ -1,0 +1,4 @@
+#LXMacro#
+@super_uvTools.pl grabApplyMaterial
+@super_UVTools.pl world_space_uvs
+@super_UVTools.pl Y uvHotSpotTool

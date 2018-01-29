@@ -1,0 +1,5 @@
+#LXMacro#
+tool.attr paint.mesh sizX ?*-1.0
+tool.attr paint.mesh sizY ?*-1.0
+tool.attr paint.mesh sizZ ?*-1.0
+tool.attr effector.clone flip ?+1

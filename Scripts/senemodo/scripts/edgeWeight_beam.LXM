@@ -1,0 +1,10 @@
+#LXMacro#
+@selectionTools.pl cutCubePipeIntoSides
+select.drop edge
+@select_boundaryEdges.pl
+@edgeWeight.pl 95
+select.drop polygon
+select.useSet senetempBeam select
+vert.merge auto
+select.useSet senetempBeam select
+select.editSet senetempBeam remove
