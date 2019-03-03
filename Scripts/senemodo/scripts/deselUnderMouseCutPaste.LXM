@@ -1,4 +1,0 @@
-#LXMacro#
-@deselectMeshOrEdgeLoop.pl
-select.cut
-@pasteandselect.pl

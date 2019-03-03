@@ -1,3 +1,0 @@
-#LXMacro#
-@super_uvTools.pl autoEdgeSel peeler
-@super_UVTools.pl U scaleToPixelSize

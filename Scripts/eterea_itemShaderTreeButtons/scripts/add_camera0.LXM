@@ -1,3 +1,0 @@
-#LXMacro#
-item.create camera
-item.channel locator$size 0.0

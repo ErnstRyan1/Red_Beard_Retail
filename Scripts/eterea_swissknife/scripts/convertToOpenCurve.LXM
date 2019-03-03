@@ -1,3 +1,0 @@
-#LXMacro#
-select.convert vertex
-poly.makeCurveOpen

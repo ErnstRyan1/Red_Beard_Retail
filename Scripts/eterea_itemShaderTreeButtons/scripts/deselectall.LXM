@@ -1,3 +1,0 @@
-#LXMacro#
-select.typeFrom item;pivot;center;edge;polygon;vertex;ptag true
-select.drop item

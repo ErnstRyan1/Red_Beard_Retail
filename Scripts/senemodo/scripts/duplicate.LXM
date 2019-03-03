@@ -1,4 +1,0 @@
-#LXMacro#
-#item.duplicate all:[True]
-item.duplicate
-@turnon.pl xfrm.move

@@ -1,7 +1,0 @@
-#LXMacro#
-workPlane.fitSelect
-tool.set preset:"uv.create" mode:on
-tool.setAttr tool:"uv.create" attr:proj value:planar
-tool.doApply
-select.nextMode
-workPlane.reset

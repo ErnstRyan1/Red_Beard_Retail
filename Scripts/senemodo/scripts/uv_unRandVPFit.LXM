@@ -1,3 +1,0 @@
-#LXMacro#
-@super_uvTools.pl unRandomizeUVs
-viewport.fitSelected

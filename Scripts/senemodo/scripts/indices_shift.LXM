@@ -1,4 +1,0 @@
-#LXMacro#
-select.3DElementUnderMouse add
-@geometryTools.pl shiftIndices
-select.drop polygon

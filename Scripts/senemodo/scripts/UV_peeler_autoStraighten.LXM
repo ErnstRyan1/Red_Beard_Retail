@@ -1,6 +1,0 @@
-#LXMacro#
-@super_uvTools.pl peeler
-select.drop edge
-@super_UVTools.pl selUnHorizontalUVEdges
-@moveToFurthest.pl forceUV right horizontal eachGroup
-select.type polygon
