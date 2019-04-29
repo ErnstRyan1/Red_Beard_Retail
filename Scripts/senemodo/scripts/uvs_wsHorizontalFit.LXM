@@ -1,6 +1,0 @@
-#LXMacro#
-@super_UVTools.pl world_space_uvs
-@super_UVTools.pl U unRotate
-user.value sene_texFitU 1.0
-@super_UVTools.pl U prop prop1dFit
-@super_UVTools.pl U V shrink1pixel

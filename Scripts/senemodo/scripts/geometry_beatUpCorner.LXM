@@ -1,6 +1,0 @@
-#LXMacro#
-@select_floodToggle.pl noDiagonal
-select.convert polygon
-@bevelittle.pl
-@geometry_beatUpCorner.pl
-select.contract

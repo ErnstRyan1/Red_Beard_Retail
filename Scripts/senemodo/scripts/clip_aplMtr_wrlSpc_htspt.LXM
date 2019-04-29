@@ -1,3 +1,0 @@
-#LXMacro#
-@super_UVTools.pl apply_this_material+uv
-@super_UVTools.pl Y uvHotSpotTool

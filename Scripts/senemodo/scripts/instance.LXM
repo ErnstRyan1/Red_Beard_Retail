@@ -1,3 +1,0 @@
-#LXMacro#
-item.duplicate [True] locator [True]
-@turnon.pl xfrm.move

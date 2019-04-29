@@ -1,8 +1,0 @@
-#LXMacro#
-tool.set uv.relax on
-tool.reset
-tool.attr uv.relax mode abf
-tool.attr uv.relax iter 50
-tool.attr uv.relax lock 0
-tool.doApply
-tool.set uv.relax off

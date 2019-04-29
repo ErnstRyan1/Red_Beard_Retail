@@ -1,6 +1,0 @@
-#LXMacro#
-tool.attr prim.tube sides 4
-tool.attr prim.tube segments 1
-tool.attr prim.tube radius [2 m]
-tool.attr prim.tube caps false
-tool.attr prim.tube uvs true

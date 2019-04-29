@@ -1,3 +1,0 @@
-#LXMacro#
-item.create locator
-item.channel locator$size 0.0

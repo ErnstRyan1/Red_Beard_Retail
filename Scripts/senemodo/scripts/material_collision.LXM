@@ -1,3 +1,0 @@
-#LXMacro#
-poly.setMaterial [textures/common/collision] [1.0 0.0 0.0] [80.0 %] [20.0 %] [1] [0]
-item.channel advancedMaterial$tranAmt [50.0 %]
