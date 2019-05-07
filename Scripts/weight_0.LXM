@@ -1,5 +1,0 @@
-#LXMacro#
-tool.set preset:"vertMap.setWeight" mode:on
-tool.setAttr tool:"vertMap.setWeight" attr:weight value:"0.0"
-tool.doApply
-select.nextMode
